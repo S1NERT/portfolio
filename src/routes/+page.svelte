@@ -14,7 +14,9 @@
 	</h1>
 	<p>lorum ipsum</p>
 	<div class="flex gap-x-4">
-		<a href="mailto:aksinert@gmail.com"><MailOpen /></a><a><FileText /></a><a><Linkedin /></a>
+		<a href="mailto:aksinert@gmail.com"><MailOpen /></a><a
+			href="src/lib/images/Ari Siner Resume.png"><FileText /></a
+		><a href="https://www.linkedin.com/in/ari-sinert-48597b27a/"><Linkedin /></a>
 	</div>
 </section>
 
