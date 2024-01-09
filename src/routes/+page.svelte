@@ -10,10 +10,13 @@
 </svelte:head>
 
 <section class="my-32 flex flex-col gap-y-4">
-	<h1 class="text-2xl font-semibold text-gray-800">
-		Hello! I am a high school student at NuVu Innovation School
+	<h1 class="text-2xl font-semibold leading-loose tracking-wider text-gray-600">
+		Hello! I am a high school student at <a
+			href="https://cambridge.nuvustudio.com/"
+			class="text-blue-500">NuVu Innovation School</a
+		> in Cambridge, Massachusetts. I enjoy crafting design experiences that empower others.
 	</h1>
-	<p>lorum ipsum</p>
+	<!-- Add my job experiance and education here when i get those <p></p> -->
 	<div class="flex gap-x-4">
 		<a href="mailto:aksinert@gmail.com"><MailOpen /></a><a
 			href="src/lib/images/Ari Siner Resume.png"><FileText /></a
@@ -21,14 +24,26 @@
 	</div>
 </section>
 
-<Card.Root>
-	<Card.Content>
+<Card.Root class="overflow-hidden rounded">
+	<Card.Content class="p-0">
 		<div class="image-overlay-container">
 			<img src={coverImage} alt="project" />
-			<div class="centered-text">Your Text Here</div>
+			<div class="centered-text">
+				<div class="p-16 text-2xl leading-loose text-gray-600">
+					<div class="font-bold">
+						A multi-sensory exhibit created for the Queer Youth Exhibition
+					</div>
+					co hosted by The Design Museum Everywhere. The exhibit utilizes small take home objects that
+					are collected at tables placed around the space and when put together form a unicorn. The tables
+					are placed intentionally to guide people towards other events in the space. In addition when
+					a user approaches the table, it lights up and plays a small audio sample through a custom designed
+					audio driver, corresponding to the closest event along with showcasing a prominent LGBTQ+ figure.
+				</div>
+			</div>
 		</div>
 	</Card.Content><Card.Header>
-		<Card.Title>Test</Card.Title><Card.Description>Test</Card.Description>
+		<Card.Title><div class="text-xl tracking-wide">-Prideful Trinkits</div></Card.Title
+		><Card.Description></Card.Description>
 	</Card.Header>
 </Card.Root>
 
