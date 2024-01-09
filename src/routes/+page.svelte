@@ -9,7 +9,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="my-32 flex flex-col gap-y-4">
+<section class="my-32 flex flex-col gap-y-8">
 	<h1 class="text-2xl font-semibold leading-loose tracking-wider text-gray-600">
 		Hello! I am a high school student at <a
 			href="https://cambridge.nuvustudio.com/"
@@ -17,10 +17,12 @@
 		> in Cambridge, Massachusetts. I enjoy crafting design experiences that empower others.
 	</h1>
 	<!-- Add my job experiance and education here when i get those <p></p> -->
-	<div class="flex gap-x-4">
-		<a href="mailto:aksinert@gmail.com"><MailOpen /></a><a
-			href="src/lib/images/Ari Siner Resume.png"><FileText /></a
-		><a href="https://www.linkedin.com/in/ari-sinert-48597b27a/"><Linkedin /></a>
+	<div class="flex gap-x-8">
+		<a href="mailto:aksinert@gmail.com"><MailOpen class="h-10 w-10 stroke-gray-600" /></a><a
+			href="src/lib/images/Ari Siner Resume.png"><FileText class="h-10 w-10 stroke-gray-600" /></a
+		><a href="https://www.linkedin.com/in/ari-sinert-48597b27a/"
+			><Linkedin class="h-10 w-10 stroke-gray-600" /></a
+		>
 	</div>
 </section>
 
