@@ -17,7 +17,7 @@
 		> in Cambridge, Massachusetts. I enjoy crafting design experiences that empower others.
 	</h1>
 	<!-- Add my job experiance and education here when i get those <p></p> -->
-	<div class="flex gap-x-8">
+	<div class="flex flex gap-x-8 gap-y-2">
 		<a href="mailto:aksinert@gmail.com"><MailOpen class="h-10 w-10 stroke-gray-600" /></a><a
 			href="src/lib/images/Ari Siner Resume.png"><FileText class="h-10 w-10 stroke-gray-600" /></a
 		><a href="https://www.linkedin.com/in/ari-sinert-48597b27a/"
@@ -26,16 +26,18 @@
 	</div>
 </section>
 
-<Card.Root class="overflow-hidden rounded">
+<Card.Root class="overflow-hidden" id="target-element">
 	<Card.Content class="p-0">
-		<div class="image-overlay-container">
+		<div class="image-overlay-container overflow-hidden rounded-lg">
 			<img src={coverImage} alt="project" />
 			<div class="centered-text">
-				<div class="p-16 text-2xl leading-loose text-gray-600">
-					<div class="font-bold">
+				<div
+					class="text-pretty text-balance p-2 text-[clamp(0.5rem,2vw,1.5rem)] leading-loose text-gray-600 sm:p-10 md:p-12 lg:p-14 xl:p-16"
+				>
+					<span class="font-bold">
 						A multi-sensory exhibit created for the Queer Youth Exhibition
-					</div>
-					co hosted by The Design Museum Everywhere. The exhibit utilizes small take home objects that
+					</span>
+					co-hosted by The Design Museum Everywhere. The exhibit utilizes small take home objects that
 					are collected at tables placed around the space and when put together form a unicorn. The tables
 					are placed intentionally to guide people towards other events in the space. In addition when
 					a user approaches the table, it lights up and plays a small audio sample through a custom designed
@@ -44,7 +46,10 @@
 			</div>
 		</div>
 	</Card.Content><Card.Header>
-		<Card.Title><div class="text-xl tracking-wide">-Prideful Trinkits</div></Card.Title
+		<Card.Title
+			><div class="text-[clamp(0.5rem,2vw,1.5rem)] tracking-wide">
+				-Prideful Trinkits
+			</div></Card.Title
 		><Card.Description></Card.Description>
 	</Card.Header>
 </Card.Root>

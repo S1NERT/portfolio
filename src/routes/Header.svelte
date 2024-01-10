@@ -32,6 +32,12 @@
 			lastScrollY = currentScrollY;
 		}
 	}
+	function scrollToTarget() {
+		const element = document.getElementById('target-element');
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
 </script>
 
 <header
@@ -41,12 +47,15 @@
 >
 	<div class="container flex h-14 items-center justify-between">
 		<a class="mr-6 flex items-center space-x-2" href="/">
-			<span class="hidden text-2xl font-bold sm:inline-block">ari sinert</span>
+			<span class="hidden text-[clamp(0.5rem,2vw,1.5rem)] font-bold sm:inline-block"
+				>ari sinert</span
+			>
 		</a>
 		<nav class="flex items-center space-x-6 text-sm font-medium">
-			<a
+			<button
+				on:click={scrollToTarget}
 				class="text-md text-foreground/60 text-slate-500 transition-colors hover:text-foreground/80"
-				href="/">Thing</a
+				>Works</button
 			>
 		</nav>
 	</div>
