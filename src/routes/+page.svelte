@@ -3,6 +3,11 @@
 	import { MailOpen, FileText, Linkedin } from 'lucide-svelte';
 	import Pridefultrinkets from '$lib/images/Pridefultrinkets.png';
 	import InclusiveMicro from '$lib/images/InclusiveMicro.png';
+
+	import projectsStore from '$stores/projectStore';
+	import type { ProjectData } from '$stores/projectTypes';
+
+	let projects: ProjectData[] = $projectsStore;
 </script>
 
 <svelte:head>
@@ -27,13 +32,15 @@
 	</div>
 </section>
 
-<Project
-	src={InclusiveMicro}
-	alt="prideful trinkits project"
-	quickDesc="Test"
-	longDesc="Theing"
-	projectTitle="Thifn"
-/>
+{#each projects as project}
+	<Project
+		src={project.src}
+		alt={project.alt}
+		quickDesc={project.quickDesc}
+		longDesc={project.longDesc}
+		projectTitle={project.projectTitle}
+	/>
+{/each}
 
 <!-- 
 <Card.Root class="overflow-visible" id="target-element">
