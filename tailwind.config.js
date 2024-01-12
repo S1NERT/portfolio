@@ -56,6 +56,9 @@ const config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans]
+			},
+			aspectRatio: {
+				'4/3': '4 / 3',
 			}
 		}
 	},

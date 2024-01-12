@@ -9,9 +9,9 @@
 	export let projectTitle: string;
 </script>
 
-<Card.Root class="overflow-visible" id="target-element">
+<Card.Root class="overflow-visible">
 	<Card.Content class="p-0">
-		<div class="image-overlay-container overflow-hidden rounded-lg drop-shadow-md">
+		<div class="image-overlay-container aspect-4/3 overflow-hidden rounded-lg drop-shadow-md">
 			<img {src} {alt} class="object-cover" />
 			<div class="centered-text">
 				<div
