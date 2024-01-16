@@ -12,6 +12,16 @@ const projects = writable([
         projectTitle: 'Prideful Trinkets',
     },
 
+    {
+        src: InclusiveMicro,
+        alt: '',
+        quickDesc: 'A comprehensive urban development initiative',
+        longDesc: ' involving a comprehensive analysis of urban conditions, including street usage, infrastructure, and noise pollution, using data from client consultations, online sources, and crash statistics from 2020-2023 to propose an improved roadway design.',
+        projectTitle: 'Inclusive Micromobility System',
+
+
+    },
+
 ]);
 
 export default projects;
