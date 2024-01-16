@@ -1,13 +1,8 @@
 <script lang="ts">
 	import Project from '$lib/components/Project.svelte';
 	import { MailOpen, FileText, Linkedin } from 'lucide-svelte';
-	import Pridefultrinkets from '$lib/images/Pridefultrinkets.png';
-	import InclusiveMicro from '$lib/images/InclusiveMicro.png';
 
-	import projectsStore from '$stores/projectStore';
-	import type { ProjectData } from '$stores/projectTypes';
-
-	let projects: ProjectData[] = $projectsStore;
+	import projects from '$stores/projectStore';
 </script>
 
 <svelte:head>
@@ -23,7 +18,7 @@
 		> in Cambridge, Massachusetts. I enjoy crafting design experiences that empower others.
 	</h1>
 	<!-- Add my job experiance and education here when i get those <p></p> -->
-	<div class="flex flex gap-x-8 gap-y-2">
+	<div class="flex gap-x-8 gap-y-2">
 		<a href="mailto:aksinert@gmail.com"><MailOpen class="h-10 w-10 stroke-gray-600" /></a><a
 			href="src/lib/images/Ari Siner Resume.png"><FileText class="h-10 w-10 stroke-gray-600" /></a
 		><a href="https://www.linkedin.com/in/ari-sinert-48597b27a/"
@@ -32,15 +27,18 @@
 	</div>
 </section>
 
-{#each projects as project}
-	<Project
-		src={project.src}
-		alt={project.alt}
-		quickDesc={project.quickDesc}
-		longDesc={project.longDesc}
-		projectTitle={project.projectTitle}
-	/>
-{/each}
+<section class="justify-items-left grid items-center gap-8">
+	{#each $projects as project, index}
+		<Project
+			src={project.src}
+			alt={project.alt}
+			quickDesc={project.quickDesc}
+			longDesc={project.longDesc}
+			projectTitle={project.projectTitle}
+			{index}
+		/>
+	{/each}
+</section>
 
 <!-- 
 <Card.Root class="overflow-visible" id="target-element">

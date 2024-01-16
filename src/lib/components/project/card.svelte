@@ -8,6 +8,9 @@
 	export { className as class };
 </script>
 
-<div class={cn('rounded-lg border bg-card text-card-foreground', className)} {...$$restProps}>
+<div
+	class={cn('overflow-visible rounded-lg border bg-card text-card-foreground', className)}
+	{...$$restProps}
+>
 	<slot />
 </div>

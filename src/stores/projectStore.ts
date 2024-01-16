@@ -1,34 +1,17 @@
 import { writable } from 'svelte/store';
-import toml from 'toml';
-import type { ProjectData } from './projectTypes';
-// Create a writable store with TypeScript type
-const projectsStore = writable<ProjectData[]>([]);
 
-// Function to load and parse the TOML file
-async function loadProjects() {
-    try {
-        // Fetch the TOML file
-        const response = await Event.fetch('$stores/projects.toml');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const tomlText = await response.text();
+import Pridefultrinkets from '$lib/images/Pridefultrinkets.png';
+import InclusiveMicro from '$lib/images/InclusiveMicro.png';
 
-        // Parse the TOML file
-        const projectsData = toml.parse(tomlText);
+const projects = writable([
+    {
+        src: Pridefultrinkets,
+        alt: '',
+        quickDesc: 'A multi-sensory exhibit created for the Queer Youth Exhibition',
+        longDesc: ' co-hosted by The Design Museum Everywhere. The exhibit utilizes small take home objects that a user approaches the table, it lights up and plays a small audio sample through a custom designed',
+        projectTitle: 'Prideful Trinkets',
+    },
 
-        // Validate or transform projectsData to conform to ProjectData[]
-        // This step depends on the structure of your TOML file and the data it contains
+]);
 
-        // Update the store with the parsed data
-        projectsStore.set(projectsData.projects);
-    } catch (error) {
-        console.error('Error loading projects:', error);
-    }
-}
-
-// Call the function to load projects
-loadProjects();
-
-// Export the store
-export default projectsStore;
+export default projects;

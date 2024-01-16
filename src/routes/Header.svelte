@@ -33,7 +33,7 @@
 		}
 	}
 	function scrollToTarget() {
-		const element = document.getElementById('target-element');
+		const element = document.getElementById('project-index-0');
 		if (element) {
 			element.scrollIntoView({ behavior: 'smooth' });
 		}
