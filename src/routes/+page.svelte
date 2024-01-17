@@ -2,7 +2,7 @@
 	import Project from '$lib/components/Project.svelte';
 	import { MailOpen, FileText, Linkedin } from 'lucide-svelte';
 
-	import projects from '$stores/projectStore';
+	import projects from '$stores/projects';
 </script>
 
 <svelte:head>
@@ -39,60 +39,3 @@
 		/>
 	{/each}
 </section>
-
-<!-- 
-<Card.Root class="overflow-visible" id="target-element">
-	<Card.Content class="p-0">
-		<div class="image-overlay-container overflow-hidden rounded-lg drop-shadow-md">
-			<img src={Pridefultrinkets} alt="project" />
-			<div class="centered-text">
-				<div
-					class="text-pretty text-balance p-2 text-[clamp(0.5rem,2vw,1.5rem)] leading-loose text-gray-600 sm:p-10 md:p-12 lg:p-14 xl:p-16"
-				>
-					<span class="font-bold">
-						A multi-sensory exhibit created for the Queer Youth Exhibition
-					</span>
-					co-hosted by The Design Museum Everywhere. The exhibit utilizes small take home objects that
-					are collected at tables placed around the space and when put together form a unicorn. The tables
-					are placed intentionally to guide people towards other events in the space. In addition when
-					a user approaches the table, it lights up and plays a small audio sample through a custom designed
-					audio driver, corresponding to the closest event along with showcasing a prominent LGBTQ+ figure.
-				</div>
-			</div>
-		</div>
-	</Card.Content><Card.Header>
-		<Card.Title
-			><div class="text-[clamp(0.5rem,2vw,1.5rem)] tracking-wide">
-				-Prideful Trinkits
-			</div></Card.Title
-		><Card.Description></Card.Description>
-	</Card.Header>
-</Card.Root>
-
-<Card.Root class="overflow-visible" id="target-element">
-	<Card.Content class="p-0">
-		<div class="image-overlay-container overflow-hidden rounded-lg drop-shadow-md">
-			<img src={InclusiveMicro} alt="project" />
-			<div class="centered-text">
-				<div
-					class="text-pretty text-balance p-2 text-[clamp(0.5rem,2vw,1.5rem)] leading-loose text-gray-600 sm:p-10 md:p-12 lg:p-14 xl:p-16"
-				>
-					<span class="font-bold">
-						A multi-sensory exhibit created for the Queer Youth Exhibition
-					</span>
-					co-hosted by The Design Museum Everywhere. The exhibit utilizes small take home objects that
-					are collected at tables placed around the space and when put together form a unicorn. The tables
-					are placed intentionally to guide people towards other events in the space. In addition when
-					a user approaches the table, it lights up and plays a small audio sample through a custom designed
-					audio driver, corresponding to the closest event along with showcasing a prominent LGBTQ+ figure.
-				</div>
-			</div>
-		</div>
-	</Card.Content><Card.Header>
-		<Card.Title
-			><div class="text-[clamp(0.5rem,2vw,1.5rem)] tracking-wide">
-				-Prideful Trinkits
-			</div></Card.Title
-		><Card.Description></Card.Description>
-	</Card.Header>
-</Card.Root> -->
