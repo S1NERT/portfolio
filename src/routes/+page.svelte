@@ -3,6 +3,8 @@
 	import { MailOpen, FileText, Linkedin } from 'lucide-svelte';
 
 	import projects from '$stores/projects';
+
+	let resume = 'src/lib/Ari-Sinert-Resume.pdf';
 </script>
 
 <svelte:head>
@@ -20,7 +22,7 @@
 	<!-- Add my job experiance and education here when i get those <p></p> -->
 	<div class="flex gap-x-8 gap-y-2">
 		<a href="mailto:aksinert@gmail.com"><MailOpen class="h-10 w-10 stroke-gray-600" /></a><a
-			href="."><FileText class="h-10 w-10 stroke-gray-600" /></a
+			href="./Ari-Sinert-Resume.pdf"><FileText class="h-10 w-10 stroke-gray-600" /></a
 		><a href="https://www.linkedin.com/in/ari-sinert-48597b27a/"
 			><Linkedin class="h-10 w-10 stroke-gray-600" /></a
 		>
