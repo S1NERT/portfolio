@@ -1,38 +1,18 @@
-# create-svelte
+# Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![Static Badge](https://img.shields.io/badge/SvelteKit-%23222222?style=for-the-badge&logo=svelte&link=https%3A%2F%2Fglimmer.dog%2F)
+![Static Badge](https://img.shields.io/badge/Cloudflare%20Pages-%23222222?style=for-the-badge&logo=cloudflarepages&link=https%3A%2F%2Fglimmer.dog%2F)
 
-## Creating a project
+## Requirements
 
-If you're seeing this, you've probably already done this step. Congrats!
+Svelte 4 requires `Node 16` or higher. The project is currently developed and deployed with `Node 18.17.1`.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+I also recommend using [corepack](https://github.com/nodejs/corepack) to enforce the pnpm version. You can set it up on your system with `corepack enable`.
 
-# create a new project in my-app
-npm create svelte@latest my-app
+## Development
+
+```zsh
+gh repo clone S1NERT/portfolio
+pnpm i
+pnpm dev --open
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
