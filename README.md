@@ -1,7 +1,7 @@
 # Portfolio
 
-![Static Badge](https://img.shields.io/badge/SvelteKit-%23222222?style=for-the-badge&logo=svelte&link=https%3A%2F%2Fglimmer.dog%2F)
-![Static Badge](https://img.shields.io/badge/Cloudflare%20Pages-%23222222?style=for-the-badge&logo=cloudflarepages&link=https%3A%2F%2Fglimmer.dog%2F)
+![Static Badge](https://img.shields.io/badge/SvelteKit-%23222222?style=for-the-badge&logo=svelte)
+![Static Badge](https://img.shields.io/badge/Cloudflare%20Pages-%23222222?style=for-the-badge&logo=cloudflarepages)
 
 ## Requirements
 
