@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 
 import Pridefultrinkets from '$lib/images/Pridefultrinkets.png';
 import InclusiveMicro from '$lib/images/InclusiveMicro.png';
-import SenecaVil from '$lib/images/SenecaVil.png'
+import SenecaVil from '$lib/images/SenecaVillage.png'
 
 const projects = writable([
     {
