@@ -11,8 +11,8 @@ const projects = writable([
     {
         src: Thumb,
         alt: '',
-        quickDesc: 'As the field of prosthetics evolves, it not only offers solutions for replacing lost limbs but also opens new avenues for augmenting human capabilities beyond their natural boundaries.',
-        longDesc: ' The Third Thumb project epitomizes this shift, representing a convergence of robotics, and design to enhance the human bodys functionality. Third Thumb aims to redefine human potential by enabling users to perform complex tasks with unprecedented ease and efficiency, thus challenging traditional perceptions of disability and augmentation. By focusing on the integration of this technology with the human sensory- motor system, the Third Thumb project not only demonstrates the tangible benefits of advanced prosthetics in improving everyday life but also explores the future possibilities of human - machine symbiosis.',
+        quickDesc: "A prosthetic extra finger",
+        longDesc: ' designed as an addition to the human body, instead of a replacement: demonstrating the tangible benefits of advanced prosthetics in improving everyday life. As the field of prosthetics evolves, it not only offers solutions for replacing lost limbs but also opens new avenues for augmenting human capabilities beyond their natural boundaries. The Third Thumb mimics the movement of your existing thumb, enabling seamless integration into everyday life.',
         projectTitle: '-Third Thumb',
 
 
